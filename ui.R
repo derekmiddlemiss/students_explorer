@@ -10,7 +10,7 @@ ui <- fluidPage(
     mainPanel(
       tabsetPanel(
         tabPanel(
-          title = "Plots",
+          title = "Histograms",
           fluidRow(
             column(6, histogramOutput(id = "internet_access")),
             column(6, histogramOutput(id = "reducing_pollution"))
@@ -19,6 +19,10 @@ ui <- fluidPage(
         tabPanel(
           title = "Data",
           tableOutput(id = "table") 
+        ),
+        tabPanel(
+          title = "Scatter",
+          scatterOutput(id = "scatter")
         )
         
       )

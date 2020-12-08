@@ -22,4 +22,11 @@ server <- function(input, output) {
     data = filtered_data
   )
   
+  scatterServer(
+    id = "scatter",
+    var_x = "importance_internet_access",
+    var_y = "importance_reducing_pollution",
+    data = filtered_data
+  )
+  
 }
