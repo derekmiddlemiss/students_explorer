@@ -17,14 +17,13 @@ ui <- fluidPage(
           )
         ), 
         tabPanel(
-          title = "Data",
-          tableOutput(id = "table") 
-        ),
-        tabPanel(
           title = "Scatter",
           scatterOutput(id = "scatter")
+        ),
+        tabPanel(
+          title = "Data",
+          tableOutput(id = "table")
         )
-        
       )
     )
   )
